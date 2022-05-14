@@ -4,47 +4,76 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #3a3d42;
     color: white;
+    padding: 20px;
+}
+h1{
+    font-size: 1em;
 }
 
 .wrapper{
-    width: 600px;
-    height: 575px;
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 575px;
+    min-height: 287.5px;
     overflow:hidden;
 }
 
 .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin:0 auto;
+}
+
+.bottom-part{
+    width: 600px;
+    min-width: 300px;
+    max-height: 575px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+.text{
+    overflow: hidden;
+}
+
+.text-slides{
+    display: flex;
+    
+    width: 400%;
+}
+
+.slide__text{
+    transition: all .6s ease;
+    width: 25%;
+    height: 100%;
 }
 
 .navigation{
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    gap: 6px;
 }
 
 .dot{
     height: 8px;
     width: 8px;
-    margin: 6px;
     cursor: pointer;
-    background-color: transparent;
+    background-color: #58a6ff;
     border: solid #58a6ff 1px;
     border-radius: 50%;
     transition: all .4s ease;
 }
 .dot:hover{
+    background-color: whitesmoke;
     border: solid whitesmoke 1px;
 }
 
-input[name="s"]{
+input[name="s"],
+input[name="t"]{
     position: absolute;
     visibility: hidden;
 }
