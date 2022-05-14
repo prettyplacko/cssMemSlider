@@ -71,6 +71,10 @@ h1{
     background-color: whitesmoke;
     border: solid whitesmoke 1px;
 }
+.label:active .dot{
+    background-color: rgba(245, 245, 245, 0.224);
+    border: solid rgba(245, 245, 245, 0.224) 1px;
+}
 
 input[name="s"]{
     position: absolute;
@@ -118,6 +122,7 @@ input[name="s"]{
 #s4:checked ~ .bottom-part .label:nth-of-type(4) div:hover{
     border: solid whitesmoke 1px;
 }
+
 
 #s1:checked ~ .bottom-part .slide__text:nth-of-type(1){
     margin-left: 0;
