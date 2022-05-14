@@ -105,6 +105,24 @@ input[name="t"]{
     margin-left: -75%;
 }
 
+@media (max-width: 650px) {
+    body{
+        gap:20px;
+    }
+    .bottom-part{
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: auto;
+    }
+    .navigation{
+        justify-content: center;
+    }
+
+    .bottom-part{
+        margin: initial;
+    }
+    
+}
 
 
 
